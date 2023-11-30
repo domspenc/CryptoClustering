@@ -15,7 +15,7 @@ Using the elbow method, the following steps were taken to find the best value fo
 - Create a dictionary with the data to plot the elbow curve.
 - Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
-![K-means Elbow](../Resources/K-means_elbow.png?raw=true "K-means Elbow")
+![K-means Elbow](/Resources/K-means_elbow.png?raw=true "K-means Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the Original Scaled Data
 
