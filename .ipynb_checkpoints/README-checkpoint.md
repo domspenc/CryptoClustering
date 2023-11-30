@@ -1,5 +1,7 @@
 # CryptoClustering
 
+![Stocks](/Resources/how-to-trade-stocks.png?raw=true "Stocks")
+
 In this challenge, I used Python and unsupervised learning (specifically k-means clustering) to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
 
 ### Prepare the Data
@@ -29,6 +31,8 @@ I then clustered the cryptocurrencies for the best value for [k] on the original
     - Colour the graph points with the labels found using K-means.
     - Add the "coin_id" column in the [hover_cols] parameter to identify the cryptocurrency represented by each data point.
 
+![K-means Scatter](/Resources/K-means_scatter.png?raw=true "K-means Scatter")
+
 ### Optimise Clusters with Principal Component Analysis
 
 Using the original scaled DataFrame, I performed a PCA and reduced the features to three principal components. About 89% of the total variance is condensed into the 3 PCA variables.
@@ -36,7 +40,9 @@ I then created a new DataFrame to include the PCA data, and set the "coin_id" as
 
 ### Find the Best Value for k Using the PCA Data
 
-I then used the elbow method on the PCA data to find the best value for [k]. 
+I then used the elbow method on the PCA data to find the best value for [k].
+
+![PCA Elbow](/Resources/PCA_elbow.png?raw=true "PCA Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the PCA Data
 
@@ -44,14 +50,29 @@ The same steps were taken as those with the original dataset, to cluster the cry
 - Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
 - Colour the graph points with the labels found using K-means.
 
+![PCA Scatter](/Resources/PCA_scatter.png?raw=true "PCA Scatter")
+
 ### Observations and conclusions
 
 Using the sclaled original dataframe, I determined that the best value for [k] is 4.
 
 Using the PCA data, I determined that the best value for [k] is also 4, with no difference to the original data.
 
+![Elbows Overlay](/Resources/elbows_overlay.png?raw=true "Elbows Overlay")
+
 About 89% of the total variance is condensed into the 3 PCA variables.
 
 After visually analysing the cluster analysis results side-by-side, using the PCA data makes the outliers seem more obvious, and the inertia between points is less. 
 However, each cluster is as easily identifiable with little to no overlaps using either the K-means and PCA data, but with larger datasets this is might not be the case, therefore the PCA results would be more beneficial.
 
+![Composite Scatter](/Resources/composite_scatter.png?raw=true "Composite Scatter")
+
+----------------------------------------------------------
+
+Thank you for reading!
+
+📈📈📈
+
+Image by Bankrate (https://www.bankrate.com/investing/how-to-trade-stocks/)
+
+----------------------------------------------------------
