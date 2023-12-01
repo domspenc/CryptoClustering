@@ -17,7 +17,7 @@ Using the elbow method, the following steps were taken to find the best value fo
 - Create a dictionary with the data to plot the elbow curve.
 - Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
-![K-means Elbow](/Resources/K-means_elbow.png?raw=true "K-means Elbow")
+![K-means Elbow](/Resources/original_elbow.png?raw=true "K-means Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the Original Scaled Data
 
@@ -31,7 +31,7 @@ I then clustered the cryptocurrencies for the best value for [k] on the original
     - Colour the graph points with the labels found using K-means.
     - Add the "coin_id" column in the [hover_cols] parameter to identify the cryptocurrency represented by each data point.
 
-![K-means Scatter](/Resources/K-means_scatter.png?raw=true "K-means Scatter")
+![K-means Scatter](/Resources/original_scatter.png?raw=true "K-means Scatter")
 
 ### Optimise Clusters with Principal Component Analysis
 
@@ -42,7 +42,7 @@ I then created a new DataFrame to include the PCA data, and set the "coin_id" as
 
 I then used the elbow method on the PCA data to find the best value for [k].
 
-![PCA Elbow](/Resources/PCA_elbow.png?raw=true "PCA Elbow")
+![PCA Elbow](/Resources/pca_elbow.png?raw=true "PCA Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the PCA Data
 
@@ -50,7 +50,7 @@ The same steps were taken as those with the original dataset, to cluster the cry
 - Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
 - Colour the graph points with the labels found using K-means.
 
-![PCA Scatter](/Resources/PCA_scatter.png?raw=true "PCA Scatter")
+![PCA Scatter](/Resources/pca_scatter.png?raw=true "PCA Scatter")
 
 ### Observations and conclusions
 
