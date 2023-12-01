@@ -42,8 +42,7 @@ I then created a new DataFrame to include the PCA data, and set the "coin_id" as
 
 I then used the elbow method on the PCA data to find the best value for [k].
 
-![PCA Elbow](/Resources/pca_elbow.png?raw=true "PCA Elbow")
-![PCA Elbow](/Resources/pca_elbow.png?raw=true "PCA Elbow")
+![PCA Elbow](/Resources/pca_elbow_.png?raw=true "PCA Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the PCA Data
 
@@ -51,7 +50,7 @@ The same steps were taken as those with the original dataset, to cluster the cry
 - Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
 - Colour the graph points with the labels found using K-means.
 
-![PCA Scatter](/Resources/pca_scatter.png?raw=true "PCA Scatter")
+![PCA Scatter](/Resources/pca_scatter_.png?raw=true "PCA Scatter")
 
 ### Observations and conclusions
 
