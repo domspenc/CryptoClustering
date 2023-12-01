@@ -17,7 +17,7 @@ Using the elbow method, the following steps were taken to find the best value fo
 - Create a dictionary with the data to plot the elbow curve.
 - Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
-![K-means Elbow](/Resources/original_elbow.png?raw=true "K-means Elbow")
+![Original Data Elbow](/Resources/original_elbow.png?raw=true "Original Data Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the Original Scaled Data
 
@@ -31,7 +31,7 @@ I then clustered the cryptocurrencies for the best value for [k] on the original
     - Colour the graph points with the labels found using K-means.
     - Add the "coin_id" column in the [hover_cols] parameter to identify the cryptocurrency represented by each data point.
 
-![K-means Scatter](/Resources/original_scatter.png?raw=true "K-means Scatter")
+![Original Data Scatter](/Resources/original_scatter.png?raw=true "Original Data Scatter")
 
 ### Optimise Clusters with Principal Component Analysis
 
