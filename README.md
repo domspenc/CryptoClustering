@@ -43,6 +43,7 @@ I then created a new DataFrame to include the PCA data, and set the "coin_id" as
 I then used the elbow method on the PCA data to find the best value for [k].
 
 ![PCA Elbow](/Resources/pca_elbow.png?raw=true "PCA Elbow")
+![PCA Elbow](/Resources/pca_elbow.png?raw=true "PCA Elbow")
 
 ### Cluster Cryptocurrencies with K-means Using the PCA Data
 
